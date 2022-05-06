@@ -1,3 +1,3 @@
 # Makai
 
-Remix blues stack
+Remix blues Stack

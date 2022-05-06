@@ -568,7 +568,7 @@ export default function Example() {
                   Making the world a better place through constructing elegant
                   hierarchies.
                 </p>
-                <div className="flex space-x-6">
+                {/* <div className="flex space-x-6">
                   {footerNavigation.social.map((item) => (
                     <a
                       key={item.name}
@@ -579,7 +579,7 @@ export default function Example() {
                       <item.icon className="h-6 w-6" aria-hidden="true" />
                     </a>
                   ))}
-                </div>
+                </div> */}
               </div>
               <div className="mt-12 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
                 <div className="md:grid md:grid-cols-2 md:gap-8">

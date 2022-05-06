@@ -211,17 +211,21 @@ export default function Example() {
   return (
     <div className="bg-white">
       <div className="relative overflow-hidden">
-        <video
-          autoPlay
-          loop
-          playsInline
-          muted
-          className="absolute z-0 min-w-full"
-          // src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg"
-          // alt=""
-        >
-          <source src="images/beach.mp4" />
-        </video>
+        <div className="absolute z-0">
+          <video
+            autoPlay
+            loop
+            playsInline
+            muted
+            className="min-w-full"
+            // src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg"
+            // alt=""
+          >
+            <source src="images/beach.mp4" />
+          </video>
+          <div>dfhjjkdshfdjkshfjksfhjkse</div>
+        </div>
+
         <Header />
         <main className="-mt-16">
           <div className="relative pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
@@ -255,6 +259,7 @@ export default function Example() {
                       irure qui Lorem cupidatat commodo. Elit sunt amet fugiat
                       veniam occaecat fugiat.
                     </p>
+
                     {/* <div className="mt-10 sm:mt-12">
                       <form
                         action="#"

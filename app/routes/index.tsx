@@ -223,7 +223,7 @@ export default function Index() {
               // src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg"
               // alt=""
             >
-              <source src="images/beach.mp4" />
+              <source src="https://res.cloudinary.com/hutches/video/upload/v1651847011/makai/production_ID_4782594.mp4" />
             </video>
           </div>
           <div className="relative pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14 ">

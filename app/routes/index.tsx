@@ -207,28 +207,26 @@ const footerNavigation = {
   // ]
 };
 
-export default function Example() {
+export default function Index() {
   return (
     <div className="bg-white">
       <div className="relative overflow-hidden">
-        <div className="absolute z-0">
-          <video
-            autoPlay
-            loop
-            playsInline
-            muted
-            className="min-w-full"
-            // src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg"
-            // alt=""
-          >
-            <source src="images/beach.mp4" />
-          </video>
-          <div>dfhjjkdshfdjkshfjksfhjkse</div>
-        </div>
-
         <Header />
-        <main className="-mt-16">
-          <div className="relative pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14">
+        <main className="-mt-[100px]">
+          <div className="w-full">
+            <video
+              autoPlay
+              loop
+              playsInline
+              muted
+              className="absolute z-0 min-w-full"
+              // src="https://tailwindui.com/img/component-images/cloud-illustration-teal-cyan.svg"
+              // alt=""
+            >
+              <source src="https://res.cloudinary.com/hutches/video/upload/v1651847011/makai/production_ID_4782594.mp4" />
+            </video>
+          </div>
+          <div className="relative pt-10 sm:pt-16 lg:overflow-hidden lg:pt-8 lg:pb-14 ">
             <div className="mx-auto max-w-7xl lg:px-8">
               <div className="lg:grid lg:grid-cols-2 lg:gap-8">
                 <div className="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 sm:text-center lg:flex lg:items-center lg:px-0 lg:text-left">

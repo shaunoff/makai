@@ -15,6 +15,7 @@ import {
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
+import Intro from "./components/Intro";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: tailwindStylesheetUrl }];
@@ -44,6 +45,7 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
+        <Intro />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

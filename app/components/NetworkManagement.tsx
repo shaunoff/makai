@@ -65,11 +65,14 @@ export default function NetworkManagement() {
             </dl>
           </div>
 
-          <div className="relative -mx-4 mt-10 lg:mt-0" aria-hidden="true">
+          <div
+            className="relative m-2 mt-10 overflow-hidden rounded-lg bg-blue-500 shadow lg:mt-0 lg:ml-2"
+            aria-hidden="true"
+          >
             <img
-              className="relative mx-auto"
+              className="relative mx-auto h-full w-full object-cover opacity-50 grayscale filter"
               width={490}
-              src="https://tailwindui.com/img/features/feature-example-1.png"
+              src="images/network.jpg"
               alt=""
             />
           </div>

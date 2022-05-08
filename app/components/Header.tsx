@@ -19,9 +19,9 @@ const Header = () => {
         <div className="flex flex-1 items-center justify-between">
           <div className="flex w-full items-center justify-between md:w-auto">
             <a href="/test">
-              <span className="sr-only">Workflow</span>
+              <span className="sr-only">Makai</span>
               <img
-                className="h-20 w-auto brightness-0 invert filter sm:h-20"
+                className="h-24 w-auto brightness-0 invert filter"
                 src="images/Makai.png"
                 alt=""
               />

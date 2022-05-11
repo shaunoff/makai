@@ -1,17 +1,23 @@
+import { Link } from "@remix-run/react";
 import React from "react";
 
 import MobileMenu from "./MobileMenu";
 
 const navigation = [
+  { name: "Home", href: "/" },
   { name: "Services", href: "#" },
   { name: "8(a) Contracting", href: "#" },
-  { name: "Kekoa Foundation", href: "#" },
+  { name: "Kekoa Foundation", href: "/kekoa-foundation" },
   { name: "Contact Us", href: "#" },
 ];
 
-const Header = () => {
+interface HeaderProps {
+  type?: string;
+}
+
+const Header = ({ type = "default" }: HeaderProps) => {
   return (
-    <div className="relative z-10 py-2">
+    <div className="relative z-40 py-2">
       <nav
         className="relative mx-auto flex max-w-7xl items-center justify-between px-4 sm:px-6"
         aria-label="Global"
@@ -21,8 +27,14 @@ const Header = () => {
             <a href="/test">
               <span className="sr-only">Makai</span>
               <img
-                className="h-24 w-auto brightness-0 invert filter"
-                src="images/Makai.png"
+                className={`h-24 w-auto ${
+                  type === "default" && "brightness-0 invert filter"
+                }`}
+                src={
+                  type === "default"
+                    ? "images/Makai.png"
+                    : "https://res.cloudinary.com/hutches/image/upload/v1652228148/makai/kekoa.png"
+                }
                 alt=""
               />
             </a>
@@ -31,13 +43,13 @@ const Header = () => {
           </div>
           <div className="hidden justify-end space-x-8 md:ml-10 md:flex">
             {navigation.map((item) => (
-              <a
+              <Link
                 key={item.name}
-                href={item.href}
+                to={item.href}
                 className="text-base font-medium text-white hover:text-gray-300"
               >
                 {item.name}
-              </a>
+              </Link>
             ))}
           </div>
         </div>

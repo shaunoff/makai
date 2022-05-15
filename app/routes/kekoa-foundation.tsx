@@ -11,6 +11,11 @@ import FiveG from "~/components/FiveG";
 import Header from "~/components/Header";
 import Hero from "~/components/Hero";
 import KekoaHero from "~/components/kekoa/KekoaHero";
+import Learning from "~/components/kekoa/Learning";
+import Responsibility from "~/components/kekoa/Responsibility";
+import Standfor from "~/components/kekoa/Standfor";
+import Support from "~/components/kekoa/Support";
+import Teamwork from "~/components/kekoa/Teamwork";
 import NetworkManagement from "~/components/NetworkManagement";
 import ProfessionalServices from "~/components/ProfessionalServices";
 import SoftwareSystems from "~/components/SoftwareSystems";
@@ -216,10 +221,11 @@ export default function Index() {
         <Header type="kekoa" />
         <main className="-mt-[116px]">
           <KekoaHero />
-          <NetworkManagement />
-          <FiveG />
-          <SoftwareSystems />
-          <ProfessionalServices />
+          <Standfor />
+          <Responsibility />
+          <Teamwork />
+          <Learning />
+          <Support />
         </main>
         <footer className="bg-gray-50" aria-labelledby="footer-heading">
           <h2 id="footer-heading" className="sr-only">

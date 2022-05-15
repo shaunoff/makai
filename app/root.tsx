@@ -45,7 +45,7 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
-        {/* <Intro /> */}
+        <Intro />
         <Outlet />
         <ScrollRestoration />
         <Scripts />

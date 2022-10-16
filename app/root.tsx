@@ -16,6 +16,7 @@ import {
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
 import Intro from "./components/Intro";
+import { useState } from "react";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: tailwindStylesheetUrl }];
@@ -38,6 +39,7 @@ export const loader: LoaderFunction = async ({ request }) => {
 };
 
 export default function App() {
+  const [showIntro, setShowIntro] = useState(true);
   return (
     <html lang="en" className="h-full">
       <head>
@@ -45,8 +47,7 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
-        <Intro />
-        <Outlet />
+        {showIntro ? <Intro setShowIntro={setShowIntro}/> : <Outlet />}
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

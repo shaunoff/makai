@@ -5,10 +5,10 @@ import MobileMenu from "./MobileMenu";
 
 const navigation = [
   { name: "Home", href: "/" },
-  { name: "Services", href: "#" },
-  { name: "8(a) Contracting", href: "#" },
+  // { name: "Services", href: "#" },
+  // { name: "8(a) Contracting", href: "#" },
   { name: "Kekoa Foundation", href: "/kekoa-foundation" },
-  { name: "Contact Us", href: "#" },
+  // { name: "Contact Us", href: "#" },
 ];
 
 interface HeaderProps {

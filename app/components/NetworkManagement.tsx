@@ -1,10 +1,8 @@
 import {
-  AnnotationIcon,
   GlobeAltIcon,
-  LightningBoltIcon,
-  MailIcon,
-  ScaleIcon,
-} from "@heroicons/react/outline";
+  ShieldCheckIcon,
+  BoltIcon,
+} from "@heroicons/react/24/outline";
 
 const transferFeatures = [
   {
@@ -12,21 +10,21 @@ const transferFeatures = [
     name: "Resilient",
     description:
       "The HONU is able to accommodate multiple WAN connections concurrently.  The HONU serves as a gateway for any network type including 5G, SATCOM, and Tactical Data Links. ",
-    icon: GlobeAltIcon,
+    icon: ShieldCheckIcon,
   },
   {
     id: 2,
     name: "Rapidly Deployable",
     description:
       "The HONU's plug-and-play design is easily adapted to meet user requirements.  Makai's vendor-agnostic approach allows us to integrate any mission critical hardware or software component.",
-    icon: ScaleIcon,
+    icon: BoltIcon,
   },
   {
     id: 3,
     name: "Optimized Capacity",
     description:
       "The HONU's autosensing firewall switches between networks to minimize latency and optimize throughput.",
-    icon: LightningBoltIcon,
+    icon: GlobeAltIcon,
   },
 ];
 

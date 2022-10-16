@@ -216,8 +216,8 @@ export default function Index() {
         <Header />
         <main className="-mt-[116px]">
           <Hero />
-          <NetworkManagement />
           <Managed />
+          <NetworkManagement />
           {/* <FiveG />
           <SoftwareSystems /> */}
           {/* <ProfessionalServices /> */}

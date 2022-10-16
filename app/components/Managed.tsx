@@ -49,7 +49,7 @@ export default function ProfessionalServices() {
       <div className="mx-auto max-w-7xl py-16 px-4 sm:px-6 lg:py-24 lg:px-8">
         <div className="mx-auto max-w-3xl text-center">
           <h3 className="mt-2 bg-gradient-to-b from-blue-400 to-blue-600 bg-clip-text text-3xl font-extrabold tracking-tight text-transparent sm:text-4xl">
-            Professional Services
+            What We Do
           </h3>
           <p className="mt-4 text-lg text-gray-500">
             Makai is committed to providing exceptional services to our government and commercial customers.

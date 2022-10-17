@@ -1,18 +1,14 @@
 import {
-  CloudUploadIcon,
-  CogIcon,
   LockClosedIcon,
-  RefreshIcon,
-  ServerIcon,
-  ShieldCheckIcon,
-} from "@heroicons/react/outline";
+  ArrowPathIcon,
+} from "@heroicons/react/24/outline";
 
 const competencies = [
   {
     name: "Consultancy",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: CloudUploadIcon,
+    icon: ArrowPathIcon,
   },
   {
     name: "Software & Systems Engineering",
@@ -24,26 +20,8 @@ const competencies = [
     name: "C5ISR",
     description:
       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: RefreshIcon,
+    icon: ArrowPathIcon,
   },
-  //   {
-  //     name: "Advanced Security",
-  //     description:
-  //       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-  //     icon: ShieldCheckIcon,
-  //   },
-  //   {
-  //     name: "Powerful API",
-  //     description:
-  //       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-  //     icon: CogIcon,
-  //   },
-  //   {
-  //     name: "Database Backups",
-  //     description:
-  //       "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-  //     icon: ServerIcon,
-  //   },
 ];
 
 export default function FiveG() {

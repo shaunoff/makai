@@ -10,7 +10,7 @@ const MobileMenu = ({ navigation }: MobileMenuProps) => {
   return (
     <>
       <Popover as="div" className="-mr-2 flex items-center md:hidden">
-        <Popover.Button className="focus-ring-inset inline-flex items-center justify-center rounded-md bg-gray-900 p-2 text-gray-400 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+        <Popover.Button className="focus-ring-inset inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-900">
           <span className="sr-only">Open main menu</span>
           <Bars3Icon className="h-6 w-6" aria-hidden="true" />
         </Popover.Button>
@@ -29,13 +29,6 @@ const MobileMenu = ({ navigation }: MobileMenuProps) => {
           >
             <div className="overflow-hidden rounded-lg bg-white shadow-md ring-1 ring-black ring-opacity-5">
               <div className="flex items-center justify-between px-5 pt-4">
-                <div>
-                  <img
-                    className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/workflow-mark-teal-500-cyan-600.svg"
-                    alt=""
-                  />
-                </div>
                 <div className="-mr-2">
                   <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-cyan-600">
                     <span className="sr-only">Close menu</span>
@@ -54,22 +47,6 @@ const MobileMenu = ({ navigation }: MobileMenuProps) => {
                       {item.name}
                     </a>
                   ))}
-                </div>
-                <div className="mt-6 px-5">
-                  <a
-                    href="/test"
-                    className="block w-full rounded-md bg-gradient-to-r from-teal-500 to-cyan-600 py-3 px-4 text-center font-medium text-white shadow hover:from-teal-600 hover:to-cyan-700"
-                  >
-                    Start free trial
-                  </a>
-                </div>
-                <div className="mt-6 px-5">
-                  <p className="text-center text-base font-medium text-gray-500">
-                    Existing customer?{" "}
-                    <a href="/test" className="text-gray-900 hover:underline">
-                      Login
-                    </a>
-                  </p>
                 </div>
               </div>
             </div>

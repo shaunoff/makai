@@ -24,10 +24,10 @@ const Header = ({ type = "default" }: HeaderProps) => {
       >
         <div className="flex flex-1 items-center justify-between">
           <div className="flex w-full items-center justify-between md:w-auto">
-            <a href="/test">
+            <a href="/">
               <span className="sr-only">Makai</span>
               <img
-                className={`h-24 w-auto ${
+                className={`h-16 w-auto md:h-24 ${
                   type === "default" && "brightness-0 invert filter"
                 }`}
                 src={
@@ -53,14 +53,6 @@ const Header = ({ type = "default" }: HeaderProps) => {
             ))}
           </div>
         </div>
-        {/* <div className="hidden md:flex md:items-center md:space-x-6">
-          <a
-            href="/test"
-            className="text-base font-medium text-white hover:text-gray-300"
-          >
-            Log in
-          </a>
-        </div> */}
       </nav>
     </div>
   );

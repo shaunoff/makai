@@ -17,6 +17,7 @@ import tailwindStylesheetUrl from "./styles/tailwind.css";
 import { getUser } from "./session.server";
 import Intro from "./components/Intro";
 import { useState } from "react";
+import { AnimatePresence } from "framer-motion";
 
 export const links: LinksFunction = () => {
   return [{ rel: "stylesheet", href: tailwindStylesheetUrl }];
@@ -47,7 +48,8 @@ export default function App() {
         <Links />
       </head>
       <body className="h-full">
-        {showIntro ? <Intro setShowIntro={setShowIntro}/> : <Outlet />}
+        {showIntro && <Intro setShowIntro={setShowIntro} />}
+        <Outlet />
         <ScrollRestoration />
         <Scripts />
         <LiveReload />

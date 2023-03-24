@@ -11,7 +11,7 @@ const Hero = () => {
             </span>
           </h1>
           <p className="block text-center text-4xl font-extrabold text-gray-400 [text-shadow:0_4px_8px_rgba(0,0,0,0.5)] md:text-6xl">
-            Commited to the
+            Committed to the
           </p>
           <p className="block text-center text-4xl font-extrabold text-gray-400 [text-shadow:0_4px_8px_rgba(0,0,0,0.5)] md:text-6xl ">
             pursuit of excellence

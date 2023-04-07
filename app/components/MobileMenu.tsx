@@ -1,6 +1,7 @@
 import { Fragment } from "react";
 import { Popover, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { Link } from "@remix-run/react";
 
 interface MobileMenuProps {
   navigation: Record<string, string>[];
@@ -39,13 +40,13 @@ const MobileMenu = ({ navigation }: MobileMenuProps) => {
               <div className="pt-5 pb-6">
                 <div className="space-y-1 px-2">
                   {navigation.map((item) => (
-                    <a
+                    <Link
                       key={item.name}
-                      href={item.href}
+                      to={item.href}
                       className="block rounded-md px-3 py-2 text-base font-medium text-gray-900 hover:bg-gray-50"
                     >
                       {item.name}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>

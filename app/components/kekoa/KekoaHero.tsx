@@ -14,7 +14,7 @@ const KekoaHero = () => {
         <div className="flex h-full w-full flex-col items-center justify-center">
           <h1 className="mt-4 text-5xl font-extrabold text-white [text-shadow:0_4px_8px_rgba(0,0,0,0.5)] md:text-6xl">
             <span className="block text-center text-white [text-shadow:0_4px_8px_rgba(0,0,0,0.5)]">
-              Kūlia i ka nu‘u
+              'A'ohe hana nui ke alu 'ia
             </span>
           </h1>
           <p className="block text-center text-4xl font-extrabold text-[#F1B159] [text-shadow:0_4px_8px_rgba(0,0,0,0.5)] md:text-6xl">

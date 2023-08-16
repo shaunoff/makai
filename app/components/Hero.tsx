@@ -23,10 +23,10 @@ const Hero = () => {
         loop
         playsInline
         muted
-        className="absolute -top-[800px] z-10 min-h-full w-auto min-w-full max-w-none"
+        className="absolute -top-[0px] z-10 min-h-full w-auto min-w-full max-w-none"
       >
         <source
-          src="https://res.cloudinary.com/hutches/video/upload/v1651847011/makai/production_ID_4782594.mp4"
+          src="https://res.cloudinary.com/hutches/video/upload/f_auto,q_auto,w_1200/v1651847011/makai/production_ID_4782594.mp4"
           type="video/mp4"
         />
         Your browser does not support the video tag.

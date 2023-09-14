@@ -8,7 +8,7 @@ const navigation = [
   // { name: "Services", href: "#" },
   // { name: "8(a) Contracting", href: "#" },
   { name: "Kekoa Foundation", href: "/kekoa-foundation" },
-  // { name: "Contact Us", href: "#" },
+  { name: "Careers", href: "/careers" },
 ];
 
 interface HeaderProps {

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Hero = () => {
+const Hero = ({ careers }: { careers?: boolean }) => {
   return (
     <header className="relative mb-6 flex h-screen items-center justify-center overflow-hidden">
       <div className="relative z-30 h-full w-full bg-gradient-to-t from-white via-transparent">

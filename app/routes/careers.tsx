@@ -8,15 +8,14 @@ export default function Index() {
       <div className="relative overflow-hidden bg-gradient-to-b from-blue-400 to-blue-600">
         <Header />
       </div>
-      <main className="flex w-full items-center justify-center p-24">
+      <main className="flex w-full items-center justify-center pt-24">
         <iframe
-          src="https://app.smartsheet.com/b/form/73939e5b36cd49b4bb58ece8abbeea7d"
+          src="https://makaillc.bamboohr.com/careers"
           width="100%"
-          height="800"
-          frameBorder="0"
-          style={{ border: "none" }}
+          height="1400px"
+          style={{ border: "none", }}
           title="Smartsheet Form"
-        ></iframe>
+        />
         {/* <Hero careers /> */}
         {/* <FiveG />
           <SoftwareSystems /> */}

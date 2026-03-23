@@ -66,9 +66,6 @@ export default function ContractVehicles() {
 							<h4 className="mt-4 text-center text-lg font-semibold text-gray-900">
 								{vehicle.name}
 							</h4>
-							<p className="mt-2 text-center text-sm text-gray-500">
-								{vehicle.description}
-							</p>
 						</div>
 					))}
 				</div>
@@ -86,9 +83,6 @@ export default function ContractVehicles() {
 							<h4 className="mt-4 text-center text-lg font-semibold text-gray-900">
 								{vehicle.name}
 							</h4>
-							<p className="mt-2 text-center text-sm text-gray-500">
-								{vehicle.description}
-							</p>
 						</div>
 					))}
 				</div>

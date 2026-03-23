@@ -35,7 +35,10 @@ const Intro = ({ setShowIntro }: { setShowIntro: (arg: boolean) => void }) => {
         muted
         className="w-full md:w-1/2"
         onCanPlay={() => setPlayBack()}
-        onEnded={() => setShowIntro(false)}
+        onEnded={() => {
+          localStorage.setItem("makai_intro_seen", "true");
+          setShowIntro(false);
+        }}
       >
         <source src="https://res.cloudinary.com/hutches/video/upload/v1651933812/makai/makai.mp4" />
       </video>

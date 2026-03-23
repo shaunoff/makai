@@ -5,7 +5,7 @@ import MobileMenu from "./MobileMenu";
 
 const navigation = [
   { name: "Home", href: "/" },
-  // { name: "Services", href: "#" },
+  { name: "What We Do", href: "/what-we-do" },
   // { name: "8(a) Contracting", href: "#" },
   { name: "Kekoa Foundation", href: "/kekoa-foundation" },
   { name: "Careers", href: "/careers" },

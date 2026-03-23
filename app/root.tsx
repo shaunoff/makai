@@ -13,7 +13,7 @@ import {
 
 import tailwindStylesheetUrl from "./styles/tailwind.css";
 import Intro from "./components/Intro";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AnimatePresence } from "framer-motion";
 
 export const links: LinksFunction = () => {
@@ -27,7 +27,14 @@ export const meta: MetaFunction = () => ({
 });
 
 export default function App() {
-  const [showIntro, setShowIntro] = useState(true);
+  const [showIntro, setShowIntro] = useState(false);
+
+  useEffect(() => {
+    const hasSeenIntro = localStorage.getItem("makai_intro_seen");
+    if (!hasSeenIntro) {
+      setShowIntro(true);
+    }
+  }, []);
   return (
     <html lang="en" className="h-full">
       <head>
